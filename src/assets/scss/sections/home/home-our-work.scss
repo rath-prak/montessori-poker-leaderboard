@@ -1,0 +1,97 @@
+// .home-portfolio-item {
+//     position: relative;
+//     display: flex;
+//     align-items: flex-end;
+//     margin-bottom: 1em;
+
+// }
+
+// .home-portfolio-item-label {
+//     position: absolute;
+//     padding: 2em;
+//     p, h1 {
+//         margin-bottom: 0px;
+//     }
+// }
+
+// / Image overlay box 
+
+.img-overlay-item {
+    overflow: hidden !important;
+    margin-bottom: 0.8em;
+  }
+  
+  @media screen and (min-width) {
+    .img-overlay-item {
+      margin-bottom: 0px;
+    }
+  }
+  
+  .img-overlay,
+  .img-overlay-02 {
+      position: relative;
+      margin-bottom: 30px;
+  }
+  
+  .img-overlay-caption, 
+  .img-overlay-caption-02 {
+      background: rgba($brand-color, 1);
+      position: absolute;
+      width:100%;
+      height: 99%;
+      opacity: 0;
+      z-index: 99;
+      flex-direction: column;
+      padding: 20px;
+      transition: opacity 0.5s;
+      overflow: hidden !important;
+  }
+  
+  .img-overlay-caption:hover,
+  .img-overlay-caption-02:hover{
+      opacity: 1;
+  }
+  
+  .img-overlay-02 {
+      margin-bottom: 15px;
+  }
+  
+  .img-overlay-caption-02 {
+      background: rgba($brand-color, $alpha: 0.85);
+      display: block;
+      padding: 50px;
+      p {
+          text-align: left;
+          font-size: 1.2em;
+          line-height: 1 !important;
+      }
+      * {
+          color: $white;
+          text-align: left;
+      }
+  }
+  
+  @media screen and (min-width: 40em) {
+    .img-overlay-caption-02 {
+      padding: 20px;
+      p {
+        font-size: 1.4em;
+      }
+    }
+  }
+  
+  @media screen and (min-width: 1000px) {
+    .img-overlay-caption-02 {
+      padding: 60px;
+      p {
+        font-size: 1.8em;
+          line-height: 1.1;
+      }
+    }
+  }
+  
+
+  // .our-work-blurb {
+  //   padding-right: 0.1em;
+  // }
+

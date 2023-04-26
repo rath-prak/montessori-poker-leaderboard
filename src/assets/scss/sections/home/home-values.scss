@@ -1,0 +1,37 @@
+.values-item {
+    h1 {
+        margin-bottom: 5px;
+        font-size: 1.2em;
+        // text-transform: uppercase;
+        font-family: $bold-font;
+    }
+    h1, p {
+        line-height: 1.2;
+    }
+    p {
+        margin-bottom: 0px;
+    }
+    // margin-bottom: 2em;
+}
+
+
+//grid version
+.home-values-content {
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    p {
+        margin-bottom: 0px;
+    }
+}
+
+.values-icon {
+    width: 25px;
+    display: inline-block;
+}
+
+.home-values-right-content {
+    padding-left: 14em;
+}

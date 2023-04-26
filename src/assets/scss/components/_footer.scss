@@ -1,0 +1,19 @@
+
+.footer-wrapper {
+    padding: 1.5em;
+}
+
+.footer-content-wrapper {
+    padding: 1em;
+        background: lighten($color: $theme-color, $amount: 2);
+    p {
+        
+        color: #fff;
+        font-size: 0.8em;
+    }
+    h5 {
+        color: #fff;
+        margin-bottom: 5px;
+        text-decoration: underline;
+    }
+}

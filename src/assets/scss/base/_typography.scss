@@ -1,0 +1,311 @@
+
+// @font-face { font-family: "NeueMontreal-Regular"; src: url('../../assets/webfonts/PPNeueMontreal-Regular.woff2') format("woff2");}
+// @font-face { font-family: "NeueMontreal-Medium"; src: url('../../assets/webfonts/PPNeueMontreal-Medium.woff2') format("woff2");}
+// @font-face { font-family: "NeueMontreal-Bold"; src: url('../../assets/webfonts/PPNeueMontreal-Bold.woff2') format("woff2");}
+
+
+@font-face { font-family: "premier-Regular"; src: url('../../assets/webfonts/PremierLeagueW01.woff2') format("woff2");}
+@font-face { font-family: "premier-Medium"; src: url('../../assets/webfonts/PremierLeagueW01.woff2') format("woff2");}
+@font-face { font-family: "premier-Bold"; src: url('../../assets/webfonts/PremierLeagueW01-Bold.woff2') format("woff2");}
+
+
+// $light-font: 'NeueMontreal-Light', Helvetica, sans-serif;
+$main-font: 'premier-Regular', Helvetica, sans-serif;
+$medium-font: 'premier-Medium', Helvetica, sans-serif;
+$bold-font: 'premier-Bold', Helvetica, sans-serif;
+
+p {
+  margin-bottom: 1.4em;
+  font-size: 20px;
+  color: #5C5F62;
+  font-weight: 400;
+  font-family: $main-font;
+  line-height: 1.4;
+}
+
+::selection {
+  background: $brand-color;
+  color: $white;
+  opacity: 1;
+}
+
+// @media screen and (min-width: 40em){
+//   p {
+//     font-size: 18px;
+//   }
+// }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $main-font;
+  font-weight: 200;
+  color: $font-color;
+  margin-bottom: 30px;
+}
+
+.title,
+.subtitle {
+  color: $font-color;
+}
+
+p,
+li,
+text  {
+  font-family: $main-font;
+  color: $font-color;
+}
+
+strong {
+  color: $font-color;
+}
+
+.link-text {
+    font-family: $main-font;
+    font-weight: 600;
+    color: $link-text-color !important;
+    text-decoration: underline;
+}
+
+/****************** PARAGRAPH SYLES ********************/
+.super-script {
+  text-decoration: none !important;
+}
+
+strong {
+  color: $font-color;
+}
+
+.lead-x1 {
+  font-size: 1.1em;
+}
+
+.lead-x2 {
+  font-size: 1.15em;
+  margin-bottom: 0.6em;
+  // line-height: 1.5;
+  line-height: 1.1;
+}
+
+.lead-x3 {
+  font-size: 1.4em;
+  margin-bottom: 0.6em;
+  // line-height: 1.3;
+  line-height: 1.2;
+}
+
+.lead-x4 {
+  font-size: 1.3em;
+  // line-height: 1.2;
+  line-height: 1.1;
+  margin-bottom: 0.5em;
+}
+
+.lead-x5 {
+  font-size: 1.6em;
+  line-height: 1.1;
+  margin-bottom: 0.5em;
+}
+
+.caption-tourism {
+  font-size: 1em;
+  margin-top: -20px;
+}
+
+.caption {
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+
+.line-height-small {
+  line-height: 1.1;
+}
+
+/****************** HEADINGS ********************/
+
+.lead-heading-x1 {
+  font-size: 2.2em;
+  line-height: 1;
+  font-family: $medium-font;
+}
+
+
+@media screen and ( min-width: 40em ){
+  .lead-x1 {
+    font-size: 1.3em;
+  }
+  .lead-x2 {
+    font-size: 1.25em;
+  }
+  .lead-x4 {
+    font-size: 2.2em;
+  }
+  .lead-x5 {
+    font-size: 2.2em;
+  }
+  .lead-heading-x1 {
+    font-size: 2.2em;
+  }
+}
+
+@media screen and ( min-width: 769px ){
+  .lead-x2 {
+    font-size: 1.25em;
+  }
+  .lead-x3 {
+    font-size: 1.7em;
+  }
+  .lead-x4 {
+    font-size: 2.2em;
+  }
+  .lead-x5 {
+    font-size: 2.3em;
+  }
+}
+
+@media screen and ( min-width: 1152px ){
+  .lead-x2 {
+    font-size: 1.3em;
+    line-height: 1.3;
+  }
+  .lead-x3 {
+    font-size: 1.7em;
+  }
+  .lead-x4 {
+    font-size: 2.3em;
+  }
+  .lead-heading-x1 {
+    font-size: 2.6em;
+  }
+
+}
+
+@media screen and ( min-width: 1440px ){
+  .lead-x2 {
+    font-size: 1.4em;
+  }
+  .lead-x3 {
+    font-size: 2em;
+  }
+  .lead-x4 {
+    font-size: 2.60em;
+  }
+
+  .lead-x5 {
+    font-size: 2.4em;
+  }
+  .lead-heading-x1 {
+    font-size: 3.2em;
+  }
+    
+}
+
+
+@media screen and ( min-width: 1491px ){
+
+  .lead-x5 {
+    font-size: 2.9em;
+  }
+    
+}
+
+@media screen and ( min-width: 1589px ){
+  .lead-heading-x1 {
+    font-size: 3.6em;
+  }   
+}
+
+/****************** Heading Styles ********************/
+
+.hero-heading {
+  font-size: 1.4em;
+  line-height: 1.1;
+}
+
+@media screen and ( min-width: 40em ){
+  .hero-heading {
+    font-size: 1.6em;
+  }
+}
+
+@media screen and ( min-width: 769px ){
+  .hero-heading {
+    font-size: 1.8em;
+  }
+}
+
+@media screen and ( min-width: 1152px ){
+  .hero-heading {
+    font-size: 2em;
+  }
+}
+
+@media screen and ( min-width: 1440px ){
+  .hero-heading {
+    font-size: 3em;
+  }
+}
+
+
+
+.section-title {
+  font-size: 2.2em;
+}
+
+.subtitle {
+  font-size: 1.6em !important;
+  margin-bottom: 10px !important;
+}
+
+.section-heading-x1 {
+  font-size: 1.4em;
+  margin-bottom: 0.6em;
+}
+
+@media screen and ( min-width: 40em ){
+  .section-heading-x1 {
+    font-size: 2em;
+  }
+}
+
+
+/****************** quote ********************/
+.quote-sm {
+  font-size: 1.4em;
+  padding-right: 30px;
+}
+
+.serif-quote {
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 1.9em;
+}
+
+@media screen and ( min-width: 980px ){
+  .serif-quote {
+    font-size: 2.6em;
+  }
+}
+
+@media screen and ( min-width: 1440px ){
+  .serif-quote {
+    font-size: 3em;
+  }
+}
+
+
+.statement-block {
+  margin-bottom: 15px;
+}
+
+// @media screen and ( min-width: 40em ){
+//   .section-heading-x1 {
+//     font-size: 2em;
+//   }
+// }
+
+.case-study-quote-link {
+  a {
+    color: $font-color;
+  }
+  a:hover {
+    color: $link-text-color;
+  }
+}

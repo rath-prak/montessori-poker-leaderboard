@@ -1,0 +1,33 @@
+
+.data-table {
+    width: 100%;
+    padding: 15px;
+    background: #fff;
+    border-radius: 2px;
+    thead {
+        background: $font-color;   
+    }
+    thead > tr {
+        th {
+            padding: 10px;
+            padding-left: 20px;
+            color: #fff;
+            font-size: 14px;
+            abbr {
+                text-decoration-style: none !important;
+            }
+        }
+    }
+    tbody {
+        td {
+            padding: 10px;
+            padding-left: 20px;
+            color: $font-color;
+            font-family: $marketing-font-regular;
+            font-size: 14px;
+        }
+        tr:nth-child(even) {
+            background: lighten(#f2f2f2, 2);
+        }
+    }
+}

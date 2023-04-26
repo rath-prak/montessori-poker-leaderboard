@@ -1,0 +1,36 @@
+.card {
+    margin-bottom: 15px;
+}
+
+.card-image-link {
+    figure:hover {
+        opacity: 0.85;
+        transition: all 0.25s;
+    }
+}
+
+.card-content {
+    .card-title-link {
+        .card-discription {
+            font-size: 1rem;
+        }
+        .card-heading:hover,
+        .card-discription:hover {
+            text-decoration: underline;            
+        }
+    }
+    .card-tags {
+        font-size: 0.80em;
+        margin-bottom: 0px;
+        span {
+            font-family: $main-font;
+            font-weight: 600;
+            a {
+                color: $font-color;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

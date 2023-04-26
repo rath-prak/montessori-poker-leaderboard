@@ -1,0 +1,53 @@
+/**** home quote section ****/
+
+/**** quote banner ****/
+.home-quote-content {
+    padding-top: 10em; 
+    .bold-quote {
+        font-size: 3em;
+        line-height: 1;
+    }
+    span {
+        font-size: 7em;
+    }
+}
+
+
+.quote-link {
+    color: #fff !important;
+}
+
+
+.home-quote-wrapper {
+    background: url(../img/quote-banner-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.hero-banner-blurb {
+    padding-right: 0em;
+}
+
+// @media screen and ( min-width: 40em ){
+//     .hero-banner-blurb {
+//         font-size: ;
+//     }
+// }
+
+@media screen and ( min-width: 1250px ){
+    .hero-banner-blurb {
+        padding-right: 1.4em;
+    }
+}
+
+@media screen and ( min-width: 1491px ){
+    .hero-banner-blurb {
+        padding-right: 0em;
+    }
+}
+
+@media screen and ( max-width: 40em ){
+    .mark-quote {
+        font-size: 1em;
+
+    }
+} 

@@ -1,0 +1,128 @@
+
+
+.text-expertise {
+    font-family: $medium-font;
+}
+
+.inline-dot {
+    width: 10px;
+    height: 10px;
+    background: $reverse;
+    background: $font-color-light;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 7px;
+    border-radius: 50%;
+    margin-bottom: 2px;
+}
+
+
+.services-item {
+    padding: 1.6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 420px;
+    background: #2d2d2d;
+    background: rgba(#fff, $alpha: 0.05);
+    // background: #EE6823;
+    transition: all 1s;
+}
+
+.services-item:hover {
+    background: rgba(#fff, $alpha: 0.15);
+}
+
+.service-item-label {
+    h1 {
+        font-size: 2em;
+        line-height: 1.2;
+    }
+    h1, p {
+        margin-bottom: 5px;
+    }
+    p {
+        line-height: 1.2 !important;
+        font-size: 1.2em;
+    }
+}
+
+// .service-item-label {
+//     color: #EE6823 important;
+// }
+
+
+// .service-item-label:hover {
+//     background: green;
+//     h1 {
+//         color: #fff !important;
+//     }
+// }
+
+// ANIMATION
+
+// #animation-duo-cube {
+//     width: 80px;
+//     height: 80px;
+// }
+
+.animation-icon-01,
+.animation-icon-02,
+.animation-icon-03,
+.animation-icon-04
+ {
+    width: 70px;
+    height: 70px;
+}
+
+.animation-icon-01 {
+    width: 60px;
+    height: 60px;
+}
+
+.animation-icon-03 {
+    width: 60px;
+    height: 60px;
+}
+
+.animation-icon-04 {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+// GRID
+.grid-parent {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 1.25rem;
+    grid-row-gap: 1.25rem;
+}
+
+@media screen and (min-width: 640px){
+    .grid-parent {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .grid-parent {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+//orange blob 
+#orange-blurb {
+    width: 120px;
+    height: 120px;
+}
+
+@media screen and ( min-width: 40em ){
+    #orange-blurb {
+        width: 250px;
+        height: 250px;
+    }
+}

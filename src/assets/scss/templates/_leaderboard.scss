@@ -1,0 +1,159 @@
+
+$border-radius: 0.6em;
+
+.main-wrapper {
+    padding: 1.5em;
+}
+
+.leaderboard-wrapper {
+    // border: 1px solid rgba($color: #fff, $alpha: 0.1);
+    padding: 1.5em;
+}
+
+.leaderboard-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.8em;
+    align-items: center;
+    h1 {
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
+    .leaderboard-header-logo {
+        width: 180px;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.leaderboard-title {
+    background: darken($color: $theme-color, $amount: 2);
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr 1fr 1fr;
+    border-radius: $border-radius $border-radius 0px 0px;
+    p {
+        color: #fff;
+        font-size: 0.9em;
+        font-weight: bold;
+        margin-bottom: 0px;
+    }
+    .player-pos {
+        padding-right: 1.5em;
+    }
+}
+
+.player-item {
+    // background: lighten($color: $theme-color, $amount: 2);
+    background: #fff;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr 1fr 1fr;
+    align-items: center;
+    // border-top: 1px solid #efefef;
+    p {
+        // color: #fff;
+        color: $font-color;
+        font-size: 1.1em;
+        margin-bottom: 0px; 
+    }
+
+    .player-pos {
+        padding-right: 1.5em;
+    }
+
+    .td-points {
+        background: $accent-color;
+        // background: #91D9AE;
+        padding: 0.5em;
+        border-radius: 4px;
+        font-family: $bold-font;
+        color: $theme-color;
+    }
+}
+
+.player-item:nth-child(even) {
+    background: darken($color: $theme-color, $amount: 0.5);
+    background: #f4f4f4;
+    background: #f9f9f9;
+}
+
+.player-item:last-child {
+    border-radius: 0px 0px $border-radius $border-radius;
+}
+
+.player-profile {
+    display: flex;
+    align-items: center;
+    p {
+        // color: #fff;
+        color: $font-color;
+        font-size: 1.1em;
+        font-weight: bold;
+        margin-bottom: 0px;
+        padding-left: 30px; 
+    }
+}
+
+.player-avatar {
+    width: 45px;
+    height: 45px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+
+
+//Player profile photos
+
+.player-avatar.wong {
+    background: url(../img/wong.png) no-repeat center center;
+    background-size: cover;
+}
+
+.player-avatar.meng {
+    background: url(../img/kano.png) no-repeat center center;
+    background-size: cover;
+}
+
+.player-avatar.alex {
+    background: url(../img/alex.png) no-repeat center center;
+    background-size: cover;
+}
+
+.player-avatar.michael {
+    background: url(../img/mitch.png) no-repeat center center;
+    background-size: cover;
+}
+
+.player-avatar.owen {
+    background: url(../img/owen.png) no-repeat center center;
+    background-size: cover;
+}
+
+.player-avatar.rath {
+    background: url(../img/rath.png) no-repeat center center;
+    background-size: cover;
+}
+
+.player-avatar.rajon {
+    background: url(../img/rajon.png) no-repeat center center;
+    background-size: cover;
+}
+
+.player-avatar.ryan {
+    background: url(../img/ryan.png) no-repeat center center;
+    background-size: cover;
+}
+
+.player-avatar.kyo {
+    background: url(../img/kyo.png) no-repeat center center;
+    background-size: cover;
+}
+
+.player-avatar.kinda {
+    background: url(../img/kinda.png) no-repeat center center;
+    background-size: cover;
+}
+

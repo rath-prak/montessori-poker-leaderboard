@@ -1,0 +1,60 @@
+{
+  "name": "Diplomatix",
+  "version": "1.0.0",
+  "description": "Montessori",
+  "main": "gulpfile.babel.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build --production"
+  },
+  "author": "Montessori",
+  "license": "MIT",
+  "dependencies": {
+    "bulma": "^0.8.0",
+    "foundation-sites": "^6.6.0",
+    "gsap": "^3.1.1",
+    "jquery": "^3.2.1",
+    "motion-ui": "^2.0.3",
+    "node-sass": "^4.14.1",
+    "what-input": "^5.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/register": "^7.8.3",
+    "autoprefixer": "^9.7.4",
+    "babel-loader": "^8.0.6",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^3.3.1",
+    "gulp-cli": "^2.2.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-extname": "^0.2.0",
+    "gulp-if": "^2.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-load-plugins": "^1.6.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.1",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-terser": "^1.2.0",
+    "js-yaml": "^3.13.1",
+    "panini": "^1.3.0",
+    "rimraf": "^2.7.1",
+    "style-sherpa": "^1.0.0",
+    "uncss": "^0.16.2",
+    "vinyl-named": "^1.1.0",
+    "webpack": "^4.41.5",
+    "webpack-stream": "^5.2.1",
+    "yargs": "^12.0.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zurb/foundation-zurb-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zurb/foundation-sites/issues",
+    "email": "foundation@zurb.com"
+  },
+  "private": true
+}

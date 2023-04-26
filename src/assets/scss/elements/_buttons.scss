@@ -1,0 +1,227 @@
+/* BUTTONS */
+/* ------- */
+
+%button-style {
+  color: $font-color;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 8px 30px;
+  border: 1px solid $font-color;
+  position: relative;
+  cursor: pointer;
+  transition: color 1s ease;
+  overflow: hidden;
+  display: inline-block;
+  z-index: 0;
+  font-size: 12px;
+  border-radius: 50px;
+}
+
+.btn-primary:before,
+.btn-secondary:before,
+.btn-brand:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  transition: all 0.35s ease;
+	z-index: -1;
+ }
+
+ .btn-primary:before,
+ .btn-secondary:before,
+ .btn-brand:before {
+     top: 0;
+     left: -100%;
+   }
+
+  .btn-primary:hover:before,
+  .btn-secondary:hover:before,
+  .btn-brand:hover:before  {
+     left: 0;
+  }
+
+/* PRIMARY BUTTON */
+.btn-primary {
+  @extend %button-style;
+}
+
+.btn-primary:hover {
+    color: black;
+ }
+
+/* SECONDARY BUTTON */
+.btn-secondary {
+  @extend %button-style;
+  color: black;
+  border: 1px solid black;
+}
+
+.btn-secondary:before {
+  background: black;
+}
+
+a.btn-secondary:hover {
+    color: white;
+ }
+
+/* SECONDARY BUTTON */
+
+//  .btn-brand {
+//   @extend %button-style;
+//   border: 1px solid $brand-color;
+//   background: none;
+// }
+
+.btn-brand {
+  @extend %button-style;
+  // border: 1px solid $dark-grey;
+  border: none;
+  background: $dark-grey;
+  color: #fff;
+  padding: 12px 30px;
+  font-weight: 600;
+  font-size: 0.6em;
+}
+
+.btn-brand:hover {
+  color: #fff !important;
+}
+
+.btn-brand:before {
+  // border: 1px solid $brand-color;
+  background: $brand-color;
+}
+
+@media screen and (min-width: 40em){
+  .btn-brand {
+    font-size: 0.75em;
+    padding: 12px 30px;
+  }
+}
+
+
+/* ARROW BUTTONS */
+
+.btn-arrow-down {
+  width: 1em;
+  transform: rotate(180deg);
+  img {
+    width: 100%;
+  } 
+}
+
+.btn-type-link {
+  img {
+    width: 100%;
+    transform: rotate(270deg);
+  }
+}
+
+/* Animaeted button */
+.btn-type-01 {
+  margin: 3em 0;
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+  color: $font-color;
+  font-family: $main-font;
+  font-weight: 600;
+  transition: .30s cubic-bezier(0.29,0.73,0.74,1.02);
+}
+.btn-type-01::before {
+  content: "";
+  position: absolute;
+  left: -60%;
+  top: 45%;
+  width: 45%;
+  height: 2px;
+  background: $brand-color;
+  // display: inline-block;
+  transition: .30s cubic-bezier(0.29,0.73,0.74,1.02);
+}
+
+.btn-type-link {
+  a {
+    color: $font-color;
+  }
+}
+
+.btn-type-01:hover::before {
+  left: 0%;
+  width: 100%;
+}
+
+.btn-type-link:hover {
+  transform: translateY(-15px);
+}
+
+// Type button
+.btn-type-arrow,
+.btn-type-arrow-x2 {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  font-size: 0.8em;
+  // font-family: $marketing-font-semi-bold;
+  a {
+    text-transform: uppercase;
+    transition: .30s cubic-bezier(0.29,0.73,0.74,1.02);
+    padding-bottom: 2px;
+    border-bottom: 1px solid #fff;
+  }
+  a:hover {
+    color: $brand-color;
+    border-bottom: 1px solid $brand-color;
+  }
+  span {
+    width: 0.8em;
+    transform: rotate(90deg);
+    margin-left: 20px;
+    img {
+      width: 100%;
+    } 
+  }
+}
+
+.btn-type-arrow-x2 {
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 40em){
+  .btn-type-arrow,
+  .btn-type-arrow-x2 {
+    font-size: 1.2em;
+  }
+}
+
+.btn-type-external {
+  border: none;
+  background: rgba(white, .1);
+  background: $brand-color;
+  padding: 10px;
+  transition: background 0.5s;
+  a {
+    color: $white;
+    font-size: 1.4em;
+    text-decoration: none !important;
+    padding: 10px;
+    text-transform: uppercase;
+    // color: $brand-color;
+  }
+  span {
+    img {
+      width: 1em;
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.btn-type-external:hover {
+  background: rgba(white, .2);
+  background: darken($brand-color, 10);
+}

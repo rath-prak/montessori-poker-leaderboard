@@ -1,0 +1,157 @@
+// small: 0px,
+// medium: 640px,
+// large: 1024px,
+// xlarge: 1200px,
+// xxlarge: 1440px,
+
+/* Small only */
+// @media screen and (max-width: 39.9375em) {
+
+// }
+
+
+section {
+    padding: 0px 30px;
+}
+
+
+@media screen and (min-width: 40em){
+    body {
+        padding: 0px 0px;
+    }
+}
+
+// Container
+
+.container {
+    margin: 0px 0px; 
+    max-width: none; 
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        padding: 0 2em;
+    }
+}
+
+@media screen and (min-width: 1460px) {
+    .container {
+        padding: 0 2em;
+    }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .container {
+        padding: 0 4em;
+    }
+    .col-left {
+        padding-left: 6em;
+    }
+    .col-right {
+        padding-right: 6em;
+    }
+}
+
+/* Large and up */
+// @media screen and (min-width: 1520px) {
+//     .container {
+//         padding: 0px;
+//     }
+// }
+
+/*** Flush columns ***/
+/*** Columns with full with backgrounds ***/
+
+// NOTE: ".column is padding: 0px 15px", refer to bulma-reset.scss
+// .col-left,
+// .col-right {
+//     padding: 0px 2.5rem;
+// }
+
+// .grid-container {
+//     padding: 0px 2rem;
+// }
+
+// @media screen and ( min-width: 769px ){
+//     .grid-container {
+//         padding: 0px 50px;
+//     }
+//     .col-left {
+//         padding: 0px 60px 0px 60px;
+//     }
+//     .col-right {
+//         padding: 0px 60px 0px 60px;
+//     }
+//     .col-left-02 {
+//         padding: 0px 60px 0px 15px;
+//     }
+//     .col-right-02 {
+//         padding: 0px 15px 0px 60px;
+//     }
+// }
+
+// @media screen and ( min-width: 1180px ){
+//     .grid-container {
+//         padding: 0px 70px;
+//     }
+//     .col-left {
+//         padding: 0px 40px 0px 80px;
+//     }
+//     .col-right {
+//         padding: 0px 80px 0px 40px;
+//     }
+// }
+
+// @media screen and ( min-width: 1216px ){
+//     .grid-container {
+//         padding: 0px 90px;
+//     }
+//     .col-left {
+//         padding: 0px 60px 0px 100px;
+//     }
+//     .col-right {
+//         padding: 0px 100px 0px 60px;
+//     }
+// }
+
+// @media screen and ( min-width: 1436px ){
+//     .grid-container {
+//         padding: 0px 110px;
+//     }
+//     .col-left {
+//         padding: 0px 80px 0px 120px;
+//     }
+//     .col-right {
+//         padding: 0px 120px 0px 80px;
+//     }
+// }
+
+// @media screen and ( min-width: 1480px ){
+//     .grid-container {
+//         padding: 0px 11rem;
+//     }
+//     .col-left {
+//         padding: 0px 5rem 0px 12rem;
+//     }
+//     .col-right {
+//         padding: 0px 12rem 0px 5rem;
+//     }
+// }
+
+// @media screen and ( min-width: 1780px ){
+//     .grid-container {
+//         padding: 0px 15rem;
+//     }
+//     .col-left {
+//         padding: 0px 5rem 0px 16rem;
+//     }
+//     .col-right {
+//         padding: 0px 16rem 0px 5rem;
+//     }
+// }
+
+
+
+
