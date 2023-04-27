@@ -1,6 +1,6 @@
 /* Brand colors */
 $brand-color: #EE6823; 
-$theme-color: #19194B;
+$theme-color: #151740;
 // $theme-color: #37003C;
 $accent-color: #EC6276;
 
@@ -28,4 +28,5 @@ body {
   // background: $theme-color;
     background: url(../img/background-02.jpeg) no-repeat center center;
     background-size: cover;
+    background-attachment: fixed;
 }

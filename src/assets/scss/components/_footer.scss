@@ -1,19 +1,46 @@
 
+// this goes into comp format css
+
 .footer-wrapper {
     padding: 1.5em;
+    width: 100%;
 }
 
-.footer-content-wrapper {
-    padding: 1em;
+.footer-content {
+    padding: 1.5em;
         background: lighten($color: $theme-color, $amount: 2);
+        background: $theme-color;
     p {
         
         color: #fff;
         font-size: 0.8em;
     }
-    h5 {
+    h3 {
         color: #fff;
         margin-bottom: 5px;
+        font-family: $bold-font;
+    }
+}
+
+.footer-logo-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3em;
+    .footer-logo {
+        width: 20em;
+    }
+}
+
+.footer-disclaimers {
+    display: flex;
+    justify-content: center;
+    p {
+        font-size: 0.8em;
+        color: #fff;
+        padding: 3em;
+    }
+    a {
+        color: #fff;  
         text-decoration: underline;
     }
 }
