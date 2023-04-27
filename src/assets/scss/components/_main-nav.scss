@@ -2,7 +2,7 @@
   position: fixed;
   width: 100%;
   z-index: 110 !important;
-  background: $theme-color;
+  background: lighten($color: $theme-color, $amount: 3);
   padding: 10px 0px 20px 0px; 
   transition: all 0.5s;
 }
