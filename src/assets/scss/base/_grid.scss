@@ -11,13 +11,16 @@
 
 
 section {
-    padding: 0px 30px;
+    padding: 0px 15px;
 }
 
 
 @media screen and (min-width: 40em){
     body {
         padding: 0px 0px;
+    }
+    section {
+        padding: 0px 30px;
     }
 }
 
